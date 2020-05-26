@@ -71,6 +71,11 @@ body {
 	font-weight: bold;
 }
 
+#click2 {
+	text-decoration: none;
+	color: #4cd137;
+}
+
 @keyframes text {
 	0% {
 		color: black;
@@ -94,6 +99,11 @@ body {
 	justify-content: space-around;
 	width: min(1600px, 100%);
 	margin: auto;
+}
+
+.pricing-table li {
+	margin: 3px;
+	font-weight: 549;
 }
 
 .pricing-card {
