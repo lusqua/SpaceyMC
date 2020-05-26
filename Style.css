@@ -1,0 +1,173 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans", sans-serif;
+	text-decoration: none;
+	list-style: none;
+}
+
+body {
+	background-color: #000;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+.container {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+
+.container span {
+	text-transform: uppercase;
+	display: block;
+}
+
+.text1 {
+	color: white;
+	font-size: 60px;
+	font-weight: 700;
+	letter-spacing: 8px;
+	margin-bottom: 20px;
+	background: black;
+	position: relative;
+	animation: text 3s 1;
+}
+
+.text2 {
+	font-size: 30px;
+	color: #576574;
+}
+
+.text3 {
+	color: white;
+	font-size: 60px;
+	font-weight: 700;
+	letter-spacing: 8px;
+	margin-bottom: 20px;
+	background: black;
+	position: relative;
+	animation: text 3s 1;
+}
+
+.text4 {
+	font-size: 30px;
+	color: #576574;
+}
+
+.container a {
+	text-decoration: none;
+	color: #576574;
+}
+
+#click {
+	text-decoration: none;
+	color: #ff9f43;
+	font-weight: bold;
+}
+
+@keyframes text {
+	0% {
+		color: black;
+		margin-bottom: -40px;
+	}
+	30% {
+		letter-spacing: 25px;
+		margin-bottom: -40px;
+	}
+	85% {
+		letter-spacing: 8px;
+		margin-bottom: -40px;
+	}
+}
+
+/* BE VIP! */
+
+.pricing-table {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: min(1600px, 100%);
+	margin: auto;
+}
+
+.pricing-card {
+	flex: 1;
+	max-width: 360px;
+	background-color: whitesmoke;
+	margin: 20px 10px;
+	text-align: center;
+	cursor: pointer;
+	overflow: hidden;
+	color: #2d2d2d;
+	transition: 0.3s linear;
+}
+
+.pricing-card-header {
+	background-color: #576574;
+	display: inline-block;
+	color: #fff;
+	padding: 12px 30px;
+	border-radius: 0 0 20px 20px;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 600;
+	transition: 0.4s linear;
+}
+
+.pricing-card:hover .pricing-card-header {
+	box-shadow: 0 0 0 26em #576574;
+}
+
+.price {
+	font-size: 70px;
+	color: #8395a7;
+	margin: 40px 0;
+	transition: 0.2s linear;
+}
+
+.price sup,
+.price span {
+	font-size: 22px;
+	font-weight: 700;
+}
+
+.pricing-card:hover,
+.pricing-card:hover .price {
+	color: #fff;
+}
+
+.price-card li {
+	font-size: 16px;
+	padding: 10px 0;
+	text-transform: uppercase;
+}
+
+.order-btn {
+	display: inline-block;
+	margin-bottom: 40px;
+	margin-top: 80px;
+	border: 2px solid #8395a7;
+	color: #8395a7;
+	padding: 18px 40px;
+	border-radius: 8px;
+	text-transform: uppercase;
+	font-weight: 500;
+	transition: 0.3s linear;
+}
+
+.order-btn:hover {
+	background-color: #8395a7;
+	color: #fff;
+}
+
+@media screen and (max-width: 1100px) {
+	.pricing-card {
+		flex: 50%;
+	}
+}
