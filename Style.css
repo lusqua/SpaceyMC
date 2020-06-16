@@ -41,7 +41,8 @@ body {
 
 .text2 {
 	font-size: 30px;
-	color: #576574;
+	color: gold;
+	text-decoration-line: underline;
 }
 
 .text3 {
