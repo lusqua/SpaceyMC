@@ -145,6 +145,10 @@ body {
 	transition: 0.3s linear;
 }
 
+.pricing-card a {
+	color: black;
+}
+
 .pricing-card-header {
 	background-color: #576574;
 	display: inline-block;
@@ -174,7 +178,7 @@ body {
 	font-weight: 700;
 }
 
-.pricing-card:hover,
+.pricing-card li:hover,
 .pricing-card:hover .price {
 	color: #fff;
 }
@@ -207,4 +211,38 @@ body {
 	.pricing-card {
 		flex: 50%;
 	}
+}
+
+.vipcontainer {
+	width: 720px;
+	height: 480px;
+
+	margin: 0px auto;
+
+	text-align: center;
+
+	color: white;
+}
+
+.vipcontainer legend {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.vipcontainer legend span {
+	color: gold;
+}
+
+.vipcontainer li {
+	color: white;
+
+	margin: 2px;
+
+	font-size: 20px;
+}
+
+.vipcontainer p {
+	font-size: 14px;
+
+	font-style: italic;
 }
