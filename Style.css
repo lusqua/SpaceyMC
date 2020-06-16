@@ -379,4 +379,8 @@ header img {
 		width: 25px;
 		padding-top: 35px;
 	}
+
+	.pricing-table {
+		margin-top: 45px;
+	}
 }
