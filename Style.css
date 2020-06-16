@@ -173,6 +173,7 @@ header img {
 	overflow: hidden;
 	color: #2d2d2d;
 	transition: 0.3s linear;
+	border-radius: 8px;
 }
 
 .pricing-card a {
