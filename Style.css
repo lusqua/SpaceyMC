@@ -327,6 +327,10 @@ header img {
 }
 
 @media (max-width: 720px) {
+	header {
+		margin: 0px 0px 10px 0px;
+	}
+
 	.vipcontainer {
 		width: 100%;
 		height: 480px;
