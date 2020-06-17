@@ -67,6 +67,10 @@ header img {
 	animation: text 3s 1;
 }
 
+.text1 span {
+	display: inline;
+}
+
 .text2 {
 	font-size: 30px;
 	color: gold;
