@@ -7,7 +7,12 @@
 			content="width=device-width, initial-scale=1.0"
 		/>
 
-		<link rel="stylesheet" href="../Style.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+
+		<link
+			rel="shortcut icon"
+			href="img/background spacey.png"
+		/>
 
 		<link
 			rel="shortcut icon"
@@ -16,12 +21,25 @@
 
 		<title>Comandos VIP+</title>
 
+	<body>
+
 		<header>
-			<a href="../routes/vip.html"
-				><img
-					src="../img/multimedia.svg"
-					alt="back-arrow"
-			/></a>
+			<div class="HAM" onclick="Navopen()" id="HAM">
+				<ul>
+					<li class="line" id="line1"></li>
+					<li class="line" id="line2"></li>
+					<li class="line" id="line3"></li>
+				</ul>
+			</div>
+			<img src="../img/logo.png" id="imglogo" />
+			<div class="nav" id="nav">
+				<ul>
+					<li><a href="../index.html"> Home</a></li>
+					<li><a href="../index.html#about">About</a></li>
+					<li><a href="../loja.html">Loja</a></li>
+				</ul>
+			</div>
+
 		</header>
 
 		<div class="vipcontainer">
@@ -88,5 +106,6 @@
 			</fieldset>
 		</div>
 	</head>
-	<body></body>
+			<script src="../js/scroll.js"></script>
+		<script src="../js/script.js"></script></body>
 </html>

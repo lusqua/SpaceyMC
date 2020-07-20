@@ -1,35 +1,81 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0"
 		/>
-		<title>SpaceyMC</title>
 
-		<link
-			rel="stylesheet"
-			href="Style.css"
-			type="text/css"
-		/>
+		<link rel="stylesheet" href="./css/style.css" />
+
 		<link
 			rel="shortcut icon"
 			href="img/background spacey.png"
 		/>
+
+		<title>test navbar</title>
 	</head>
 	<body>
-		<div class="container">
-			<span class="text1"
-				><a href="./routes/ip.html" style="color: white;">
-					<span>Bem-vindo</span> ao</a
-				></span
-			>
-			<span class="text2">
-				<a class="click" href="./routes/ip.html"
-					><u>SpaceyMC</u></a
-				></span
-			>
-		</div>
+		<header>
+			<div class="HAM" onclick="Navopen()" id="HAM">
+				<ul>
+					<li class="line" id="line1"></li>
+					<li class="line" id="line2"></li>
+					<li class="line" id="line3"></li>
+				</ul>
+			</div>
+			<img src="./img/logo.png" id="imglogo" />
+			<div class="nav" id="nav">
+				<ul>
+					<li><a href="#"> Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="loja.html">Loja</a></li>
+				</ul>
+			</div>
+
+			<div class="headerbar" id="headerbar">
+				<h1 id="logo1">SPACEYMC</h1>
+			</div>
+		</header>
+		<main>
+			<section class="banner">
+				<h1 id="logo2">SPACEYMC</h1>
+			</section>
+			<a
+				class="server"
+				href="https://minecraft-mp.com/server-s252961"
+				target="_blank"
+				><img
+					src="https://minecraft-mp.com/half-banner-252961-3.png"
+					border="0"
+			/></a>
+
+			<section class="showroom" id="about">
+				<h1 class="title">
+					O seu lugar para construir,<br />
+					fazer amigos e travar batalhas incríveis
+				</h1>
+
+				<h2>Ip :</h2>
+				<div class="copiar">
+					<h1
+						class="title"
+						onclick="copy()"
+						onmouseout="outFunc()"
+						id="ip"
+					>
+						<u>Spaceymc.xyz</u>
+					</h1>
+					<span class="copiartext" id="Fcopiar"></span>
+				</div>
+
+				<p>Minecraft 1.16.1</p>
+			</section>
+		</main>
+		<footer></footer>
+
+		<script src="./js/scroll.js"></script>
+		<script src="./js/script.js"></script>
 	</body>
 </html>

@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins", sans-serif;
+}
+
+html {
+	margin: 0;
+}
+
+body {
+	background-color: #2d3436;
+	color: #dfe6e9;
+	height: 100%;
+	width: 100%;
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgb(179, 178, 178);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgb(126, 126, 126);
+}
+
+.HAM {
+	width: 30px;
+	height: 17.5px;
+	position: absolute;
+	top: 5%;
+	left: 8%;
+	transform: translate(-2%, -2%);
+	z-index: 2;
+	position: fixed;
+	cursor: pointer;
+	z-index: 5;
+}
+
+.HAM ul {
+	list-style: none;
+	cursor: pointer;
+}
+
+.HAM ul li {
+	width: 25px;
+	height: 3px;
+	background-color: #fff;
+	transition: 1s;
+	position: absolute;
+}
+
+.HAM.sticky ul li {
+	background-color: #000;
+}
+
+.HAM ul li.Lopen {
+	background-color: #000;
+}
+
+#line1 {
+	position: absolute;
+	top: 10%;
+	transform: translate(0, -10%);
+}
+#line2 {
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+#line3 {
+	position: absolute;
+	top: 90%;
+	transform: translate(0, -90%);
+}
+
+#line1,
+#line2,
+#line3 {
+	transition: 0.8s;
+}
+
+.Lopen#line1 {
+	transform: rotate(45deg);
+	position: absolute;
+	top: 44%;
+}
+
+.Lopen#line2 {
+	opacity: 0;
+	position: absolute;
+	top: 55%;
+}
+
+.Lopen#line3 {
+	transform: rotate(-45deg);
+	position: absolute;
+	top: 44%;
+}
+
+.nav {
+	position: fixed;
+	left: -15%;
+	height: 100%;
+	width: 15%;
+	background-color: #fff;
+	color: black;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	transition: 1s;
+}
+
+.nav ul {
+	list-style: none;
+}
+
+.nav ul li {
+	margin: 100px;
+	cursor: pointer;
+}
+
+.nav ul li a {
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+}
+
+.open {
+	position: fixed;
+	left: 0%;
+}
+
+main {
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.cardg {
+	align-items: center;
+	width: 700px;
+	height: 425px;
+	padding-top: 10px;
+	margin: 0px auto;
+	display: flex;
+	-webkit-box-shadow: 10px 10px 5px 0px
+		rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.cardd {
+	align-items: center;
+	width: 700px;
+	height: 425px;
+	margin: 50px auto 100px;
+	display: flex;
+	-webkit-box-shadow: 10px 10px 5px 0px
+		rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.carde {
+	align-items: center;
+	width: 700px;
+	height: 435px;
+	margin: 50px auto 100px;
+	display: flex;
+	-webkit-box-shadow: 10px 10px 5px 0px
+		rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.img-card {
+	width: 45%;
+	height: 100%;
+	border-right: 2px solid white;
+	background-color: #282c2e;
+	display: flex;
+}
+
+.img-card img {
+	transform: rotate(0deg);
+	margin: 95px 0px 0px 75px;
+	width: 240px;
+	height: 240px;
+	transition: 0.5s;
+}
+
+.img-card img:hover {
+	transform: rotate(-5deg);
+	width: 275px;
+	height: 275px;
+}
+
+.img-card h1 {
+	color: #fdcb6e;
+	font-size: 3.7em;
+	margin-left: 10px;
+}
+
+.cardd .img-card h1 {
+	color: #74b9ff;
+	font-size: 3.7em;
+	margin-left: 10px;
+}
+
+.carde .img-card h1 {
+	color: #00b894;
+	font-size: 3.7em;
+	margin-left: 10px;
+}
+
+.img-card h1 span {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 50px;
+}
+
+.buy-card {
+	width: 55%;
+	height: 100%;
+	background-color: #3a4042;
+	align-items: center;
+	text-align: center;
+}
+
+.buy-card a {
+	text-decoration: none;
+	color: #dfe6e9;
+}
+
+.buy-card li {
+	text-decoration: none;
+	list-style: none;
+	margin: 9px;
+	font-size: 1.15em;
+}
+
+.price {
+	font-size: 70px;
+	color: #fdcb6e;
+	margin: 20px 0;
+	transition: 0.2s linear;
+}
+
+.cardd .price {
+	font-size: 70px;
+	color: #74b9ff;
+	margin: 20px 0;
+	transition: 0.2s linear;
+}
+
+.carde .price {
+	font-size: 70px;
+	color: #00b894;
+	margin: 20px 0;
+	transition: 0.2s linear;
+}
+
+.price sup,
+.price span {
+	font-size: 22px;
+	font-weight: 700;
+}

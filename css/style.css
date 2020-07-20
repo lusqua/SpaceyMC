@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins", sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgb(179, 178, 178);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgb(126, 126, 126);
+}
+
+body {
+	color: #fff;
+	background-color: #000;
+	height: 100vh;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+}
+
+.headerbar {
+	position: fixed;
+	height: 10%;
+	width: 100%;
+	background-color: white;
+	z-index: 1;
+	opacity: 1;
+	top: -10%;
+	transition: 1.5s;
+}
+
+.headerbar.sticky {
+	opacity: 1;
+	top: 0;
+}
+
+h1#logo1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	position: fixed;
+	font-size: 2em;
+	top: 3%;
+	left: 50%;
+	transform: translate(-50%, -3%);
+	color: #000;
+	cursor: default;
+	display: none;
+}
+
+h1#logo1.sticky {
+	display: flex;
+	color: #000;
+}
+
+.HAM {
+	width: 30px;
+	height: 17.5px;
+	position: absolute;
+	top: 5%;
+	left: 8%;
+	transform: translate(-2%, -2%);
+	z-index: 2;
+	position: fixed;
+	cursor: pointer;
+	z-index: 5;
+}
+
+.HAM ul {
+	list-style: none;
+	cursor: pointer;
+}
+
+.HAM ul li {
+	width: 25px;
+	height: 3px;
+	background-color: #fff;
+	transition: 1s;
+	position: absolute;
+}
+
+.HAM.sticky ul li {
+	background-color: #000;
+}
+
+.HAM ul li.Lopen {
+	background-color: #000;
+}
+
+#line1 {
+	position: absolute;
+	top: 10%;
+	transform: translate(0, -10%);
+}
+#line2 {
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+#line3 {
+	position: absolute;
+	top: 90%;
+	transform: translate(0, -90%);
+}
+
+#line1,
+#line2,
+#line3 {
+	transition: 0.8s;
+}
+
+.Lopen#line1 {
+	transform: rotate(45deg);
+	position: absolute;
+	top: 44%;
+}
+
+.Lopen#line2 {
+	opacity: 0;
+	position: absolute;
+	top: 55%;
+}
+
+.Lopen#line3 {
+	transform: rotate(-45deg);
+	position: absolute;
+	top: 44%;
+}
+
+.nav {
+	position: fixed;
+	left: -15%;
+	height: 100%;
+	width: 15%;
+	background-color: #fff;
+	color: black;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	transition: 1s;
+}
+
+.nav ul {
+	list-style: none;
+}
+
+.nav ul li {
+	margin: 100px;
+	cursor: pointer;
+}
+
+.nav ul li a {
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+	transition: 1s;
+	padding: 5px;
+}
+
+.nav ul li a:hover {
+	color: blue;
+}
+
+.open {
+	position: fixed;
+	left: 0%;
+}
+
+main {
+	height: 100%;
+	width: 100%;
+}
+
+.banner {
+	height: 100%;
+	background: url(../img/background-spacey.jpg) no-repeat;
+	background-size: 1000px;
+	background-position: center;
+}
+
+.banner h1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	position: relative;
+	top: 80%;
+	transform: translate(-0%, -80%);
+	font-size: 3em;
+	letter-spacing: 5px;
+	animation: title 2s;
+	transition: 3s;
+}
+
+h1#logo2.sticky {
+	opacity: 0;
+}
+
+#imglogo {
+	width: 75px;
+	position: fixed;
+	top: 2%;
+	left: 1%;
+	transition: 0.5s;
+	filter: invert();
+	z-index: 2;
+}
+
+@keyframes title {
+	0% {
+		letter-spacing: 5px;
+	}
+
+	50% {
+		letter-spacing: 10px;
+	}
+}
+
+.server {
+	position: relative;
+	left: 82.5%;
+	top: 80%;
+}
+
+.showroom {
+	height: 90%;
+	background-color: rgb(39, 39, 39);
+	text-align: center;
+	padding: 10%;
+	border: 1px solid red;
+	box-sizing: border-box;
+}
+
+.showroom h1.title {
+	font-size: 2.5em;
+	margin-top: 25px;
+}
+
+.showroom h1.title#ip {
+	cursor: pointer;
+}
+
+.showroom h2 {
+	margin: 50px 0 10px;
+}
+
+.copiar {
+	position: relative;
+	display: inline-block;
+}
+
+.copiar .copiartext {
+	visibility: hidden;
+	width: 140px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px;
+	position: absolute;
+	z-index: 1;
+	bottom: 75%;
+	left: 50%;
+	margin-left: -75px;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.copiar .copiartext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+
+.copiar:hover .copiartext {
+	visibility: visible;
+	opacity: 1;
+}
+
+/*VIPS*/
+.vipcontainer {
+	width: 720px;
+	height: 480px;
+
+	margin: 0px auto;
+
+	text-align: center;
+
+	color: white;
+}
+
+.vipcontainer legend {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.vipcontainer legend span {
+	color: gold;
+}
+
+.vipcontainer li {
+	color: white;
+
+	margin: 2px;
+
+	font-size: 20px;
+
+	list-style: none;
+}
+
+.vipcontainer p {
+	font-size: 14px;
+
+	font-style: italic;
+}
