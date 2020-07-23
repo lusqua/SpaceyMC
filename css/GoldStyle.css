@@ -43,7 +43,7 @@ body {
 	z-index: 2;
 	position: fixed;
 	cursor: pointer;
-	z-index: 5;
+	z-index: 1000;
 }
 
 .HAM ul {
@@ -109,9 +109,10 @@ body {
 
 .nav {
 	position: fixed;
-	left: -15%;
+	left: -40%;
 	height: 100%;
 	width: 15%;
+	min-width: 150px;
 	background-color: #fff;
 	color: black;
 	display: flex;
@@ -125,15 +126,37 @@ body {
 	list-style: none;
 }
 
+.nav #help {
+	margin-top: -40px;
+}
+
+.nav #help li {
+	text-align: center;
+	margin: 0px 0 0 0px;
+	position: relative;
+	left: -200%;
+	transition: 1s;
+	list-style: circle;
+	padding: 1px;
+}
+
+.nav #help.viphelp li {
+	position: relative;
+	left: 0;
+}
+
 .nav ul li {
-	margin: 100px;
+	margin: 50px;
 	cursor: pointer;
+	padding: 5px;
 }
 
 .nav ul li a {
 	text-decoration: none;
 	color: #000;
 	font-weight: bold;
+	transition: 1s;
+	padding: 5px;
 }
 
 .open {
@@ -145,6 +168,7 @@ main {
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
+	transition: 1s;
 }
 
 .cardg {
@@ -198,6 +222,8 @@ main {
 	width: 240px;
 	height: 240px;
 	transition: 0.5s;
+
+	z-index: 1;
 }
 
 .img-card img:hover {
@@ -280,4 +306,71 @@ main {
 
 footer {
 	text-align: center;
+}
+
+@media only screen and (max-width: 1040px) {
+	.nav {
+		width: 70px;
+		left: -45%;
+	}
+	.open {
+		position: fixed;
+		left: 0%;
+	}
+}
+
+@media only screen and (max-width: 950px) {
+	.cardg {
+		align-items: center;
+		width: 75%;
+		min-width: 450px;
+		height: 425px;
+		padding-top: 10px;
+		margin: 0px auto;
+		display: flex;
+		-webkit-box-shadow: 10px 10px 5px 0px
+			rgba(0, 0, 0, 0.75);
+		-moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+		box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+	}
+
+	.cardd {
+		align-items: center;
+		width: 75%;
+		min-width: 450px;
+		height: 425px;
+		margin: 50px auto 100px;
+		display: flex;
+		-webkit-box-shadow: 10px 10px 5px 0px
+			rgba(0, 0, 0, 0.75);
+		-moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+		box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+	}
+
+	.carde {
+		align-items: center;
+		width: 75%;
+		min-width: 450px;
+		height: 435px;
+		margin: 50px auto 100px;
+		display: flex;
+		-webkit-box-shadow: 10px 10px 5px 0px
+			rgba(0, 0, 0, 0.75);
+		-moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+		box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+	}
+
+	.img-card img {
+		transform: rotate(10deg);
+		margin: 95px 0px 0px 0px;
+		width: 150px;
+		height: 150px;
+		transition: 0.5s;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	main {
+		padding-top: 75px;
+	}
 }

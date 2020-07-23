@@ -166,9 +166,29 @@ h1#logo1.sticky {
 	list-style: none;
 }
 
+.nav #help {
+	margin-top: -40px;
+}
+
+.nav #help li {
+	text-align: center;
+	margin: 0px 0 0 0px;
+	position: relative;
+	left: -200%;
+	transition: 1s;
+	list-style: circle;
+	padding: 1px;
+}
+
+.nav #help.viphelp li {
+	position: relative;
+	left: 0;
+}
+
 .nav ul li {
-	margin: 100px;
+	margin: 50px;
 	cursor: pointer;
+	padding: 5px;
 }
 
 .nav ul li a {
@@ -211,6 +231,7 @@ main {
 	letter-spacing: 5px;
 	animation: title 2s;
 	transition: 3s;
+	z-index: 0;
 }
 
 h1#logo2.sticky {
@@ -298,8 +319,8 @@ h1#logo2.sticky {
 
 /*VIPS*/
 .vipcontainer {
-	width: 720px;
-	height: 480px;
+	width: 90%;
+	height: 90%;
 
 	margin: 0px auto;
 

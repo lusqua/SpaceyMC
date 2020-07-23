@@ -21,3 +21,9 @@ function copy() {
 	var vcopiar = document.getElementById("Fcopiar");
 	vcopiar.innerHTML = "Copiado!";
 }
+
+function openhelp() {
+	var help = document.getElementById("help");
+
+	help.classList.toggle("viphelp");
+}
