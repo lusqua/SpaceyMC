@@ -40,11 +40,12 @@ header {
 .headerbar {
 	position: fixed;
 	height: 10%;
+	min-height: 75px;
 	width: 100%;
 	background-color: white;
 	z-index: 1;
 	opacity: 1;
-	top: -10%;
+	top: -15%;
 	transition: 1.5s;
 }
 
@@ -148,9 +149,10 @@ h1#logo1.sticky {
 
 .nav {
 	position: fixed;
-	left: -15%;
+	left: -40%;
 	height: 100%;
 	width: 15%;
+	min-width: 150px;
 	background-color: #fff;
 	color: black;
 	display: flex;
@@ -233,12 +235,6 @@ h1#logo2.sticky {
 	50% {
 		letter-spacing: 10px;
 	}
-}
-
-.server {
-	position: relative;
-	left: 82.5%;
-	top: 80%;
 }
 
 .showroom {
@@ -339,12 +335,49 @@ h1#logo2.sticky {
 
 footer {
 	position: relative;
-	top: 100%;
-	width: 100%;
 	box-sizing: border-box;
 	text-align: center;
 }
 
 footer p {
 	margin-top: 40px;
+}
+
+footer p.subtitle {
+	margin-top: 0;
+	font-size: 12px;
+}
+
+footer p.subtitle a {
+	color: rgb(69, 69, 245);
+}
+
+@media only screen and (max-width: 1000px) {
+	#imglogo {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 390px) {
+	.nav {
+		width: 70px;
+		left: -45%;
+	}
+	.open {
+		position: fixed;
+		left: 0%;
+	}
+
+	.showroom h1.title {
+		font-size: 2em;
+		margin-top: 25px;
+	}
+
+	.showroom h1.title#ip {
+		cursor: pointer;
+	}
+
+	.showroom h2 {
+		margin: 50px 0 10px;
+	}
 }
