@@ -171,6 +171,26 @@ main {
 	transition: 1s;
 }
 
+div.MEGA {
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	text-decoration: underline;
+	color: red;
+	padding: 50px;
+}
+
+.MEGAH1 {
+	border: 1px solid white;
+	display: inline;
+	padding: 10px;
+}
+
+sup.mega {
+	color: white;
+	text-decoration: underline;
+}
+
 .cardg {
 	align-items: center;
 	width: 700px;
